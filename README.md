@@ -1,24 +1,11 @@
-# splitwist-vue3
+分帳小幫手(vue3)   
+https://yoyo6140.github.io/splitwise-vue3/
 
-## Project setup
-```
-npm install
-```
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
 
-### Compiles and minifies for production
-```
-npm run build
-```
-
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+一、將頁面分成四個元件，新增成員、輸入支出與選擇成員、支出清單、成員應付/應收 
+二、使用vue3的響應式設計，一旦資料產生變化，就會更新畫面。 
+三、將資料放置於app.vue位置，分別prop上述四個元件，個別管理區塊。 
+四、使用emit將新增或刪除的資料回傳父元件，通知更新頁面。 
+五、當按下新增時，自動將資料儲存在localstorage，重新整理時，則會重新讀取，另外使用v-if，如沒有資料就會顯示「尚未新增」等字眼，並且在最下方有清除的按鈕，最後可清除資料。 
+六、載入Bootstrap5，減少原生CSS，管理樣式。
